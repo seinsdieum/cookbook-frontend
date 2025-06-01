@@ -1,0 +1,12 @@
+.dots {
+  display: flex;
+  gap: var(--gap-sm);
+  padding: calc(var(--gap-sm) * 1.25);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-dark);
+  border-radius: 50%;
+}

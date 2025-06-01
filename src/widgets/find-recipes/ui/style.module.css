@@ -1,0 +1,38 @@
+.preview {
+  aspect-ratio: 2/1;
+  background: linear-gradient(180deg, #1b1c20 0%, rgba(27, 28, 32, 0) 100%),
+    url('/public/stubs/images/home-page/recipe-search-preview.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-bg-main);
+}
+.previewElements {
+  width: 1016px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.previewElements h1 {
+  width: 800px;
+  margin-bottom: var(--gap-xl);
+}
+
+.links {
+  display: flex;
+  gap: var(--gap-3xl);
+  margin-top: calc(var(--gap-xl) + calc(var(--gap-xs) / 2));
+}
+
+.links a {
+  color: var(--color-bg-main);
+  cursor: pointer;
+}
+.links a:hover {
+  color: var(--color-primary);
+}

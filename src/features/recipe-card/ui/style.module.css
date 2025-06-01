@@ -1,0 +1,62 @@
+.card {
+  background: var(--color-bg-main);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  padding: var(--gap-lg);
+  box-shadow: var(--shadow-main);
+  transition: var(--transition-ui);
+  --cards-per-container: 4;
+  width: calc(
+    calc(
+        var(--content-width) -
+          calc(var(--gap-lg) * calc(var(--cards-per-container) - 1))
+      ) / var(--cards-per-container)
+  );
+}
+
+.card.default {
+  --cards-per-container: 4;
+}
+
+.card.preview {
+  --cards-per-container: 3;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
+  cursor: pointer;
+}
+
+.card svg,
+.card h3 {
+  transition: var(--transition-ui);
+}
+
+.card:hover svg,
+.card:hover h3 {
+  color: var(--color-primary);
+}
+
+.base {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.image {
+  aspect-ratio: 1;
+}
+
+.inline {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}

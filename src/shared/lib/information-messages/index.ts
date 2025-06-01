@@ -1,0 +1,8 @@
+export { formLabels } from './formLabels'
+export { authLabels } from './authLabels'
+export { successMessages } from './successMessages'
+export { validationMessages } from './validationMessages'
+export { loginLabels } from './loginLabels'
+export { registerLabels } from './registerLabels'
+export { errorMessages } from './errorMessages'
+export { dataLabels } from './dataLabels'

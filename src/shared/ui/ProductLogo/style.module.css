@@ -1,0 +1,12 @@
+.primary {
+  fill: var(--color-primary);
+}
+
+.logo {
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.secondary {
+  fill: var(--color-dark);
+}

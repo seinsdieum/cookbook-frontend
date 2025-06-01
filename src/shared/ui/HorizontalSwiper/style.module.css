@@ -1,0 +1,78 @@
+.next {
+  --size: calc(var(--gap-lg) * 2);
+  color: var(--color-bg-main);
+  position: absolute;
+  content: '*';
+  right: calc(-1 * var(--gap-2xl) - var(--size));
+  width: 48px;
+  height: 48px;
+  z-index: 5;
+  align-self: center;
+}
+
+.prev {
+  --size: calc(var(--gap-lg) * 2);
+  color: var(--color-bg-main);
+  position: absolute;
+  content: '*';
+  left: calc(-1 * var(--gap-2xl) - var(--size));
+  width: 48px;
+  height: 48px;
+  z-index: 5;
+  align-self: center;
+}
+
+.prev svg,
+.next svg {
+  color: var(--color-bg-main);
+}
+
+.wrapper :global(.swiper-disabled) {
+  opacity: 0.3;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  overflow: visible;
+  margin-bottom: var(--gap-md);
+}
+
+.swiper {
+  padding-left: 0;
+  margin-bottom: var(--gap-2xl);
+}
+
+.wrapper :global(.swiper-pagination) {
+  position: absolute;
+  bottom: calc(-2 * var(--gap-2xl));
+  top: 100%;
+  display: flex;
+  gap: var(--gap-md);
+  left: 0;
+  right: 0;
+  justify-self: center;
+  min-width: 0;
+  height: var(--gap-lg);
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper :global(.swiper-pagination-bullet) {
+  width: var(--gap-sm);
+  height: var(--gap-sm);
+  background: var(--color-bg-main);
+  margin: 0 !important;
+  transition: var(--transition-ui);
+  opacity: 0.5;
+}
+
+.wrapper :global(.swiper-pagination-bullet-active) {
+  width: var(--gap-md);
+  height: var(--gap-md);
+  opacity: 1;
+}
+
+.wrapper :global(.swiper-disabled) {
+  opacity: 0.5;
+}

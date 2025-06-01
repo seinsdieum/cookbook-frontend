@@ -1,0 +1,12 @@
+.content {
+  min-height: 100%;
+  flex: 1;
+  padding-left: var(--gap-lg);
+  padding-right: var(--gap-lg);
+  padding-bottom: var(--gap-lg);
+}
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

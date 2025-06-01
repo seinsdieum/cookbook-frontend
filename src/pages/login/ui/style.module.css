@@ -1,0 +1,53 @@
+.page {
+  --content-diff: calc(100vh - calc(var(--content-width) / 2));
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding-top: var(--gap-xl);
+  padding-bottom: var(--gap-xl);
+  overflow: hidden;
+  align-items: center;
+}
+
+.imageContainer {
+  max-height: calc(100vh - calc(var(--gap-xl) * 2));
+  min-height: calc(100vh - calc(var(--gap-xl) * 2));
+  margin-right: var(--gap-xl);
+  margin-left: var(--gap-xl);
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  right: 0;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.fixed {
+  z-index: 2;
+  position: fixed;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  padding-right: var(--content-diff);
+  margin-left: var(--content-diff);
+}
+
+.formContainer {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.fixed.left {
+  left: 0;
+}
+
+.fixed.right {
+  right: var(--content-diff);
+}
+
+.image.left {
+  left: 0;
+}

@@ -1,0 +1,65 @@
+{
+  "common": {
+    "loading": "Загрузка...",
+    "submit": "Отправить",
+    "cancel": "Отмена",
+    "yes": "Да",
+    "no": "Нет",
+    "back": "Назад",
+    "close": "Закрыть",
+    "next": "Далее"
+  },
+  "form": {
+    "email": "Электронная почта",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "username": "Имя пользователя",
+    "name": "Имя",
+    "send": "Отправить",
+    "reset": "Сбросить",
+    "required": "Это поле обязательно для заполнения",
+    "invalid": "Недопустимое значение",
+    "signIn": "Войти",
+    "signUp": "Зарегистрироваться"
+  },
+  "dashboard": {
+    "welcome": "Добро пожаловать, {{username}}!",
+    "yourProfile": "Ваш профиль",
+    "settings": "Настройки",
+    "notifications": "Уведомления"
+  },
+  "errors": {
+    "minPasswordLength": "Пароль должен содержать не менее {{count}} символов",
+    "maxPasswordLength": "Пароль должен содержать не более {{count}} символов",
+    "accountEmailExists": "Аккаунт с адресом {{email}} уже существует",
+    "invalidEmail": "Недопустимый адрес электронной почты",
+    "passwordsDontMatch": "Пароли не совпадают",
+    "userNotFound": "Пользователь не найден",
+    "unauthorized": "Вы не авторизованы",
+    "serverError": "Что-то пошло не так. Пожалуйста, попробуйте позже.",
+    "networkError": "Ошибка сети. Проверьте подключение к интернету.",
+    "unknownError": "Произошла неизвестная ошибка"
+  },
+  "success": {
+    "accountCreated": "Аккаунт успешно создан!",
+    "settingsUpdated": "Настройки успешно обновлены",
+    "passwordChanged": "Пароль успешно изменён"
+  },
+  "validation": {
+    "emailRequired": "Электронная почта обязательна",
+    "emailInvalid": "Пожалуйста, введите корректный адрес электронной почты",
+    "passwordRequired": "Пароль обязателен",
+    "passwordTooShort": "Пароль должен содержать не менее {{min}} символов",
+    "passwordTooLong": "Пароль не должен превышать {{max}} символов",
+    "passwordsMismatch": "Пароли не совпадают"
+  },
+  "register": {
+    "joinUs": "Присоединяйтесь",
+    "hasAccount": "Уже есть аккаунт?"
+  },
+  "login": {
+    "welcomeBack": "С возвращением",
+    "newHere": "Впервые здесь?",
+    "createAccount": "Создать аккаунт"
+  }
+}
