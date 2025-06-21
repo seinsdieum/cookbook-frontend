@@ -61,6 +61,118 @@ const CookbooksMostPopularWidgetMock = () => {
             />
           )}></RenderTrigger>
       </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
+      <div className={cn(style.item, 'shape')}>
+        <Button variant='default' size='tight'>
+          Fast breakfast
+        </Button>
+        <RenderTrigger
+          animation='scaleInSpring'
+          triggerElement={render => <Icon name='ellipsis' onClick={render} />}
+          renderElement={unmount => (
+            <ContextMenu
+              onClose={unmount}
+              actions={[{ title: 'Clone to my cookbooks', handler() {} }]}
+            />
+          )}></RenderTrigger>
+      </div>
     </div>
   )
 }

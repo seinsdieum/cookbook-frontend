@@ -1,8 +1,8 @@
 import { cn } from '@lib/classnames'
 import style from './style.module.css'
 import { ContextMenu, Icon, IconLabels, RenderTrigger } from '@ui'
-import { icons } from '@lib/icons'
 import { ContextMenuAction } from '@/shared/types/frontend'
+
 type TempProps = {
   id: number
   image?: string

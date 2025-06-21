@@ -29,7 +29,7 @@ const ResetPasswordWidget = () => {
     useResetPassword(session_token)
 
   const onSubmit: SubmitHandler<RestorePasswordSchema> = handleResetPassword
-
+  console.log(errors)
   return (
     <CompanyFormLayout title={authLabels.restoreAccess.message()}>
       <InputField

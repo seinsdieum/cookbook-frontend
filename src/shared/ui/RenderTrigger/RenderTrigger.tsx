@@ -2,6 +2,7 @@ import { AnimationVariantKeys, animationVariants } from '@lib/motion-animations'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ReactNode, useState } from 'react'
 import style from './style.module.css'
+
 type Props = {
   triggerElement: (
     handlerRender: VoidFunction,
