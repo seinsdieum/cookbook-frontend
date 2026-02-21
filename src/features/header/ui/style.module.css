@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: var(--gap-md) 0;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-bg-main);
+}

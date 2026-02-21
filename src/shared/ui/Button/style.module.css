@@ -1,0 +1,104 @@
+.btn {
+  outline: var(--border-style) transparent;
+  border-radius: var(--radius);
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+.sizeDefault {
+  padding: calc(var(--gap-sm) * 1.5) var(--gap-xl);
+}
+
+.sizeTall {
+  padding: calc(var(--gap-sm) * 1.2) var(--gap-xl);
+}
+
+.sizeTight {
+  padding: var(--gap-sm) var(--gap-lg);
+}
+
+/* ========== PRIMARY ========== */
+.primary {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.primary:hover,
+.primary:focus-visible {
+  background: var(--color-primary-hover);
+}
+
+.primary:active {
+  background: var(--color-primary-active);
+  transform: scale(0.97);
+}
+
+/* ========== DEFAULT ========== */
+.default {
+  background: var(--color-bg-main);
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.default:hover,
+.default:focus-visible {
+  background: var(--color-primary);
+}
+
+.default:active {
+  background: var(--color-main-active);
+  transform: scale(0.97);
+}
+
+/* ========== SECONDARY ========== */
+.secondary {
+  background: transparent;
+  color: var(--color-primary);
+  outline-color: var(--color-primary);
+}
+
+.secondary:hover,
+.secondary:focus-visible {
+  background: var(--color-secondary-hover-bg);
+}
+
+.secondary:active {
+  background: var(--color-secondary-active-bg);
+  transform: scale(0.97);
+}
+
+/* ========== SECONDARY REVERSE ========== */
+.secondaryReverse {
+  background: var(--color-bg-main);
+  color: var(--color-primary);
+}
+
+.secondaryReverse:hover,
+.secondaryReverse:focus-visible {
+  background: var(--color-main-hover);
+}
+
+.secondaryReverse:active {
+  background: var(--color-main-active);
+  transform: scale(0.97);
+}
+
+/* ========== DISABLED ========== */
+.btn:disabled,
+.btn[disabled] {
+  background: var(--color-disabled-bg);
+  color: var(--color-disabled-text);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  pointer-events: none;
+  opacity: 0.6;
+}

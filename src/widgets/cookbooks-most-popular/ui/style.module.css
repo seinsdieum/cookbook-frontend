@@ -1,0 +1,38 @@
+.gallery {
+  --gap: var(--gap-lg);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 258px;
+  gap: var(--gap);
+}
+
+.item {
+  background: linear-gradient(180deg, #1b1c20 0%, rgba(27, 28, 32, 0) 100%),
+    url('/stubs/images/login-page/register.png');
+  background-size: cover;
+  padding: var(--gap-lg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.item > :first-child {
+  align-self: flex-end;
+}
+
+.item > :last-child {
+  align-self: flex-start;
+}
+
+.item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}

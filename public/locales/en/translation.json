@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "close": "Close",
+    "next": "Next"
+  },
+  "form": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "username": "Username",
+    "name": "Name",
+    "send": "Send",
+    "reset": "Reset",
+    "required": "This field is required",
+    "invalid": "Invalid value",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{username}}!",
+    "yourProfile": "Your Profile",
+    "settings": "Settings",
+    "notifications": "Notifications"
+  },
+  "success": {
+    "accountCreated": "Account successfully created!",
+    "settingsUpdated": "Settings updated successfully",
+    "passwordChanged": "Password changed successfully"
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must contain at least {{min}} characters",
+    "passwordTooLong": "Password cannot exceed {{max}} characters",
+    "passwordsMismatch": "Passwords do not match"
+  },
+  "register": {
+    "joinUs": "Join Our Community",
+    "hasAccount": "Already have an account?"
+  },
+  "login": {
+    "welcomeBack": "Welcome back",
+    "newHere": "New here?",
+    "createAccount": "Create an account"
+  },
+  "auth": {
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset your password",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "codeSentToEmail": "A confirmation code was sent to {{email}}",
+    "backToSignIn": "Back to sign in",
+    "restoreAccess": "Restore account"
+},
+  "errorMsg": {
+    "minPasswordLength": "Password must be at least {{count}} characters",
+    "maxPasswordLength": "Password must be at most {{count}} characters",
+    "accountEmailExists": "An account with email {{email}} already exists",
+    "invalidEmail": "Invalid email address",
+    "passwordsDontMatch": "Passwords do not match",
+    "userNotFound": "User not found",
+    "unauthorized": "You are not authorized",
+    "serverError": "Something went wrong. Please try again later.",
+    "networkError": "Network error. Please check your internet connection.",
+    "unknownError": "Unknown error occurred"
+  }
+
+
+}

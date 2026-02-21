@@ -1,0 +1,42 @@
+.hiddenInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.codeContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  cursor: text;
+}
+
+.codeBox {
+  width: 44px;
+  height: 56px;
+  border-radius: var(--radius);
+  background: var(--color-bg-main);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 56px;
+  outline: var(--border-style) var(--color-bg-4);
+  transition: outline-color 0.2s ease, box-shadow 1s ease;
+}
+
+.codeBox p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.codeBox.error {
+  outline-color: var(--color-outline-red);
+  box-shadow: var(--glow-red);
+}
+.codeBox:has(p) {
+  outline-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+}

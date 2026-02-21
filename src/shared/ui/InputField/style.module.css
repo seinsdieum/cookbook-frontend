@@ -1,0 +1,105 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  color: var(--color-text-secondary);
+  position: relative;
+}
+
+.input {
+  background: var(--color-bg-main);
+  color: var(--color-dark);
+  font-family: 'Nunito';
+  font-size: 19.5px;
+  line-height: 1.2;
+  padding: var(--gap-md);
+  border-radius: var(--radius);
+  border: none;
+  outline: var(--border-style) var(--color-bg-4);
+  transition: outline-color 0.2s ease, box-shadow 0.2s ease,
+    background 0.2s ease, color 0.2s ease;
+}
+
+.input:hover {
+  outline-color: var(--color-bg-3);
+}
+
+.input:focus,
+.input:focus-visible {
+  outline-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+}
+
+.input:active {
+  background: var(--color-bg-2);
+}
+.input:disabled,
+.input[disabled] {
+  background: var(--color-bg-3);
+  color: var(--color-text-secondary);
+  outline-color: var(--color-bg-4);
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.input:invalid {
+  outline-color: var(--color-outline-red);
+  box-shadow: var(--glow-red);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--color-dark) !important;
+  caret-color: var(--color-dark);
+  box-shadow: 0 0 0 1000px var(--color-bg-main) inset;
+  outline-color: var(--color-primary);
+  font-size: 19.5px;
+}
+
+.errorTooltip {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  margin-top: var(--gap-xs);
+  background: var(--color-bg-main);
+  color: var(--color-dark);
+  font-size: 14px;
+  line-height: 1.4;
+  padding: var(--gap-sm) var(--gap-md);
+  border-radius: var(--radius);
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: var(--shadow-main);
+  animation: fadeIn 0.2s ease-out;
+  pointer-events: none;
+}
+
+.errorTooltip::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * calc(var(--gap-md) - calc(var(--gap-xs))) + 1px);
+  left: 12px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent var(--color-bg-main) transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+}

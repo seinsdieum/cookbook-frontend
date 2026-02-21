@@ -1,0 +1,13 @@
+.wrapper {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.render {
+  max-width: var(--content-width);
+  position: absolute;
+  top: calc(100% + calc(var(--gap-sm) / 2));
+}

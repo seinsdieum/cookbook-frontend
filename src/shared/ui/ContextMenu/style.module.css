@@ -1,0 +1,32 @@
+.menu {
+  box-shadow: var(--shadow-main);
+  display: flex;
+  flex-direction: column;
+  padding: var(--gap-sm);
+  border-radius: var(--radius);
+  background: var(--color-bg-main);
+  max-width: var(--content-width);
+  min-width: 200px;
+}
+
+.menu button {
+  width: 100%;
+  display: block;
+  max-width: var(--content-width);
+  border-radius: var(--radius);
+  padding: var(--gap-sm);
+  font-family: Nunito;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition-ui);
+}
+
+.menu button:hover {
+  background: var(--color-bg-3);
+  box-shadow: var(--shadow-main);
+}
